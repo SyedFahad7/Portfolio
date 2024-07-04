@@ -3,15 +3,15 @@
   "version": "2.0.0",
   "author": "Fahad",
   "private": true,
-  "homepage": "https://SyedFahad7.github.io/Portfolio/",
-"scripts": {
+  "homepage": "https://syedfahad.tech",
+  "scripts": {
     "css": "postcss assets/styles/main.css -o build/assets/styles/main.min.css --verbose",
     "server-reload": "browser-sync start --config './browser-sync-config.js'",
     "develop": "concurrently 'npm:css -- --watch' 'npm:server-reload'",
     "build": "npm run css -- --env 'production'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-},
+  },
   "browserslist": [
     "last 2 versions",
     "> 1%"
